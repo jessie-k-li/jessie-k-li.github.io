@@ -1,12 +1,32 @@
 ---
-title: "About this website"
+title: "About Me"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# About
+# Jessie Li
+## Education 
+**University of California San Diego 2017-2022**  
+Mathematics - Computer Science, BS  
 
-This website is pretty great!
+**Columbia University 2023 - current**  
+Biostatistics, MS
 
+## Skills
+* Experience in C++/Java/C/Python/HTML/CSS/Google App Script development  
+* Developed coding project in a small team environment  
+* Experience in Node, VSCode, Vim, OpenGL Experience in small Arduino project, web design, Excel  
+* Experience in R language
+
+## Professional Experience
+**OCA Greater Phoenix Chapter**  
+Director of Programs and Events, May 2022 - August 2023
+
+* Automated data validation using VLOOKUP, improved accuracy by 130%. Developed suitable calculation Excel tools to estimate budgets and expenses for printing fees.  
+* Implemented monthly newsletter reader on the organization's website.  
+* Recruited and guided a team of two staffs and six interns, boosted organization's efficiency by 200%. Directed, coordinated, and marketed three annual organization events with 120-150 attendees in each event. 
+* Restructured the organization's promotional graphics with consistent branding, such as monthly newsletter, website, social media posts, banners, program books, and boothing materials, increased the audience by 300%. 
+* Helped to raise $1,000 fund for voter registration events through grant writing in clear, direct style. 
+* Interviewed 3 educators to write AAPI curriculum that conforms to Arizona state standards to incorporate into K-12 classrooms Created lessons for professional development workshop and AANHPI educ

@@ -11,7 +11,7 @@
 
 
 
-<title>My awesome website</title>
+<title>Projects</title>
 
 <script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -324,10 +324,10 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="about.html">About Me</a>
+  <a href="about.html">About</a>
 </li>
 <li>
-  <a href="mailto:&lt;jessieli.pers@gmail.com&gt;">
+  <a href="mailto:&lt;you@youremail.com&gt;">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
@@ -338,9 +338,6 @@ div.tocify {
      
   </a>
 </li>
-<li>
-  <a href="https://www.linkedin.com/in/jessie-li-596061148/">LinkedIn</a>
-</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -350,47 +347,26 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">My awesome website</h1>
+<h1 class="title toc-ignore">Projects</h1>
 
 </div>
 
 
-<div id="this-page-has-information-about-whatever"
-class="section level1">
-<h1>This page has information about whatever</h1>
-<p>Here’s a gif of elmo</p>
-<p><img
-src="https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif" /></p>
-<p>What if I add some text here…<br />
-</p>
-</div>
-<div id="heres-a-subsection" class="section level1">
-<h1>Here’s a subsection</h1>
-<p>And here’s some additional text</p>
-<pre class="r"><code>rnorm(10)</code></pre>
-<pre><code>##  [1]  0.5587300  0.1653682 -1.7289868  0.6272246 -0.5592067 -1.2294464
-##  [7] -0.3490434  0.1300628 -0.1981950  1.8435934</code></pre>
-</div>
-<div id="links-to-other-websites" class="section level1">
-<h1>Links to other websites</h1>
-<p>Let’s link useful tools for data science.</p>
-<ul>
-<li><a href="https://www.google.com">Google</a></li>
-<li><a href="https://www.p8105.com">P8105</a></li>
-</ul>
-<div id="local-image" class="section level2">
-<h2>Local image</h2>
-<p><img src="img/cat.jpeg" /></p>
-</div>
-<div id="external-image-from-url" class="section level2">
-<h2>External image from url</h2>
-<p><img
-src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" /></p>
-</div>
-</div>
-<div id="link-to-page-within-the-site" class="section level1">
-<h1>Link to page within the site</h1>
-<p><a href="about.html">About me</a></p>
+<div id="here-is-a-nice-project" class="section level1">
+<h1>Here is a nice project:</h1>
+<p>You can also still use R!</p>
+<pre class="r"><code>library(tidyverse)
+
+plot_df = 
+  tibble(
+    x = runif(100),
+    y = 1 + 2 * x + rnorm(100)
+  )
+
+plot_df |&gt; 
+  ggplot(aes(x = x, y = y)) + 
+  geom_point()</code></pre>
+<p><img src="projects_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
 
 

@@ -3,12 +3,14 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "About Me"
       href: about.html
     - icon: fa-envelope fa-lg # Font-Envelope icon Font-Large
-      href: mailto:<you@youremail.com>
+      href: mailto:<jessieli.pers@gmail.com>
     - icon: fa-github fa-lg
       href: http://github.com/jessie-k-li/
+    - text: "LinkedIn"
+      href: https://www.linkedin.com/in/jessie-li-596061148/
 output:
   html_document:
     theme: cerulean
