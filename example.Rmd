@@ -1,0 +1,61 @@
+---
+title: "Example Codes"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+Here are some example codes for data science analysis. The dataset used in this analysis comes from [Instcart](https://www.instacart.com/datasets/grocery-shopping-2017). The documentation is listed on [this website](https://p8105.com/dataset_instacart.html)
+
+
+```{r setup, include=FALSE}
+library(p8105.datasets)
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+
+data("instacart")
+```
+
+Row {data-height=600}
+-------------------------------------
+### Composition of products under department (Bar Graph)
+
+```{r}
+instacart |>
+  group_by(department) |>
+  summarize(sum = n()) |>
+  plot_ly(
+    x = ~department, y= ~sum,
+    type = "bar"
+  )
+```
+
+
+Row {data-height=300}
+-------------------------------------
+
+### Amount of variety of products ordered thoughout the day, ordered by depeartment (Line Graph)
+
+```{r}
+instacart |>
+  group_by(order_hour_of_day, department) |>
+  summarize(ordered = n()) |>
+  plot_ly(
+    x = ~order_hour_of_day, y = ~ordered, color = ~department,
+    type = "scatter", mode = "line"
+  )
+```
+
+### Prior Order vs Order The Item is Added to Cart (Scatter Plot)
+
+```{r}
+instacart |>
+  group_by(add_to_cart_order) |>
+  summarize(days = mean(days_since_prior_order))|>
+  plot_ly(
+    x = ~add_to_cart_order, y = ~days,
+    type = "scatter"
+  )
+```

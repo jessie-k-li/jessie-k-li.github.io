@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "About Me"
       href: about.html
+    - text: "Examples"
+      href: example.html
     - icon: fa-envelope fa-lg # Font-Envelope icon Font-Large
       href: mailto:<jessieli.pers@gmail.com>
     - icon: fa-github fa-lg

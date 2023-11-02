@@ -1,69 +1,9 @@
 ---
-title: "My awesome website"
+title: "Jessie Li"
 output: 
   html_document:
-    toc: true
-    toc_float: true
     theme: cerulean
 ---
 
-Hi, my name is Jessie Li. I am a Biostatistics MS student in Columbia University. I am interested in genomics, public health and mental health issues. Check out about me for more information about me!
-
-Here are some example codes for data science analysis. The dataset used in this 
-```{r}
-library(p8105.datasets)
-library()
-data("instacart")
-```
-
-The data that is ordered most frequently
-```{r}
-instacart |>
-  group_by(aisle_id, order_number) |>
-  summarize(sum = n()) |>
-  ggplot(aes(x = aisle_id, sum)) +
-  geom_point()
-```
-
-Orders per day (variety)
-```{r}
-instacart |>
-  group_by(order_hour_of_day) |>
-  summarize(ordered = n()) |>
-  ggplot(aes(x = order_hour_of_day, y = ordered)) +
-  geom_point() +
-  geom_smooth()
-```
-
-Days since previous order vs Order Number Food vs Non-food
-```{r}
-instacart |>
-  filter(!(department %in% c("household", "personal care", "pets", "babies", "bulk", "missing", "other"))) |>
-  group_by(days_since_prior_order) |>
-  summarize(total = n())|>
-  ggplot(aes(x = days_since_prior_order, y = total)) +
-  geom_point()
-  
-instacart |>
-  filter(department %in% c("household", "personal care", "pets", "babies", "other")) |>
-  group_by(days_since_prior_order) |>
-  summarize(total = n())|>
-  ggplot(aes(x = days_since_prior_order, y = total)) +
-  geom_point()
-```
-People usually order every week/monthly. Weekly is more frequent than bi-weekly
-
-added to cart order vs days since prior order
-```{r}
-instacart |>
-  group_by(add_to_cart_order) |>
-  summarize(days = mean(days_since_prior_order))|>
-  ggplot(aes(x = add_to_cart_order, y = days)) +
-  geom_point()
-```
-People tend to buy things they purchase frequently more early.
-
-
-
-
+Hi, my name is Jessie Li. I am a Biostatistics MS student in Columbia University. I am interested in data visualization in genomics, public health and mental health issues. I also have experience in Computer Science, Graphic Designs, and Computer Arts. Check out about me for more information about me!
 

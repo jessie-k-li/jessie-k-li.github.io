@@ -1,26 +1,26 @@
 ---
-title: "About Me"
+title: "About Me - Jessie Li"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# Jessie Li
-## Education 
+
+# Education 
 **University of California San Diego 2017-2022**  
 Mathematics - Computer Science, BS  
 
 **Columbia University 2023 - current**  
 Biostatistics, MS
 
-## Skills
+# Skills
 * Experience in C++/Java/C/Python/HTML/CSS/Google App Script development  
 * Developed coding project in a small team environment  
 * Experience in Node, VSCode, Vim, OpenGL Experience in small Arduino project, web design, Excel  
 * Experience in R language
 
-## Professional Experience
+# Professional Experience
 **OCA Greater Phoenix Chapter**  
 Director of Programs and Events, May 2022 - August 2023
 
